@@ -95,21 +95,7 @@ export const PORTFOLIO_DATA: Project[] = [
     },
 
 
-    {
-        id: 'crime-detection',
-        category: 'engineering',
-        title: 'Crime & Face Detection',
-        subtitle: 'Automated Surveillance Logic',
-        problemStatement: 'Security systems often record passively without identifying individuals in critical zones.',
-        solution: 'Implemented a face detection pipeline using Python and OpenCV to identify subjects in video streams, intended for a larger crime detection project.',
-        techStack: ['Python', 'OpenCV', 'Face_recognition', 'NumPy'],
-        whatILearned: ['Biometric Data Processing', 'Privacy & Ethics in AI'],
-        heroMedia: {
-            type: 'image',
-            url: u('images/face_detect_placeholder.png'),
-            caption: 'Face Detection Pipeline'
-        }
-    },
+
 
     {
         id: 'dummy-beater',
@@ -179,23 +165,24 @@ export const PORTFOLIO_DATA: Project[] = [
             caption: 'Tracking Output (YouTube)'
         },
         gallery: [
-            { type: 'image', url: u('/papers/mouse_heatmap.png'), caption: 'Movement Heatmap' },
             { type: 'pdf', url: u('/papers/project3.pdf'), caption: 'Paper' }
         ]
     },
     {
         id: 'terrafair',
         category: 'research',
-        title: 'TerraFair',
-        subtitle: 'Algorithmic Justice in Urban Planning',
-        problemStatement: 'Urban planning datasets are often biased against marginalized communities.',
-        solution: 'Developed a bias detection toolkit for urban datasets using statistical parity metrics.',
+        title: 'Increasing Accuracy with Procrustes Analysis',
+        subtitle: 'Optimization of Action Recognition Models',
+        problemStatement: 'Modern action recognition algorithms often sacrifice speed for accuracy, making them difficult to deploy on legacy hardware.',
+        solution: 'Developed a novel preprocessing pipeline using Procrustes Analysis to align 3D landmarks (MediaPipe) prior to classification. This reduced computational overhead and increased model accuracy by normalizing spatial variations.',
         awards: ['🏆 TerraFair Finalist', '🥇 Best Paper Section A'],
-        techStack: ['Python', 'Scikit-learn', 'Pandas'],
+        techStack: ['Python', 'MediaPipe', 'LSTM', 'NumPy'],
         heroMedia: {
             type: 'pdf',
-            url: u('papers/Proposal for Microphones Intelligent System Technology.pdf'),
-            caption: 'Research Proposal'
+            // Assuming user will upload the actual paper later or I should use a placeholder.
+            // I'll point to project4.pdf and create a dummy or copy one of the others for now so it doesn't 404.
+            url: u('/papers/project4.pdf'),
+            caption: 'Research Paper'
         },
         gallery: [
             { type: 'image', url: u('/papers/terrafair_award.png'), caption: 'Award Ceremony' }

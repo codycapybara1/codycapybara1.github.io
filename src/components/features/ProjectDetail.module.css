@@ -104,8 +104,8 @@
 
 /* Sections */
 .section {
-    margin-bottom: 3rem;
-    /* More space between sections */
+    margin-bottom: 6rem;
+    /* More space between sections as requested */
 }
 
 .sectionTitle {
@@ -229,11 +229,7 @@
     gap: 3rem;
 }
 
-@media (min-width: 1600px) {
-    .galleryGrid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
+/* Media query removed to enforce single column */
 
 .galleryItem {
     display: flex;
@@ -316,16 +312,16 @@
 .pdfContainer {
     width: 100%;
     height: 90vh;
-    /* Fixed tall height */
     min-height: 800px;
     background: #000;
     border: 1px solid var(--color-border);
     border-radius: 8px;
     padding: 0;
-    /* No padding */
     display: flex;
     justify-content: center;
     overflow: hidden;
+    margin-bottom: 6rem;
+    /* Added heavy spacing */
 }
 
 @media (max-width: 1100px) {
